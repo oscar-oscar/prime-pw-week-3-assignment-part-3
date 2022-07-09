@@ -42,7 +42,7 @@ console.log(supplyChanges);
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
     for( let i = 0; i < supplyChanges.length; i++ ){
-        // console.log(' in for loop', supplyChanges[i]);
+        console.log(' in 3 part for loop', supplyChanges[i]);
 
         if(supplyChanges[i] > 0 ){
             console.log('added X parts', supplyChanges[i]);
@@ -76,9 +76,11 @@ for(let itemSupply of supplyChanges){
 // //    adding up all the numbers in the 'supplyChanges' array.
 // console.log('8. Total supplies available is:');
 
-for(let itemSupply of supplyChanges){
+// 3, 5, -6, 0, 7, 25]
+// for(let itemSupply of supplyChanges){
+//     if(supplyChanges[i] > 0 )
 
-}
+// }
 
 
 // // 9. We have a large stash of parts in our warehouse that we 
