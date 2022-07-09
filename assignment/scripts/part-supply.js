@@ -66,7 +66,7 @@ console.log('6. Showing supplyChanges...');
 
 
 for(let itemSupply of supplyChanges){
-    console.log('Showing supply changes with for of loop' , itemSupply);
+    console.log('7.Showing supply changes with for of loop' , itemSupply);
 }
 
 
@@ -76,12 +76,22 @@ for(let itemSupply of supplyChanges){
 // //    adding up all the numbers in the 'supplyChanges' array.
 // console.log('8. Total supplies available is:');
 
-// 3, 5, -6, 0, 7, 25]
-// for(let itemSupply of supplyChanges){
-//     if(supplyChanges[i] > 0 )
 
-// }
 
+
+
+let sum = 0;
+
+    // for( let i = 0; i < supplyChanges.length; i++ ){
+    //     sum += supplyChanges[i]
+    //     console.log('8 Total supplies available is', sum);}
+
+
+
+for (let itemSupply of supplyChanges) {
+  sum += itemSupply;
+}
+    console.log('8.Total supplies available is', sum); 
 
 // // 9. We have a large stash of parts in our warehouse that we 
 // //    need to box up and get ready for shipment. 
