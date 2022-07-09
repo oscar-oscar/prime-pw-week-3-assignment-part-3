@@ -101,3 +101,10 @@ for (let itemSupply of supplyChanges) {
 // //    Then log how many boxes were filled, and how many parts are left over.
 // console.log('9. Filling boxes with a "while" loop');
 
+
+// let boxes = 7;
+// const parts = 572
+// while( parts >= 0 ||
+//     count +=7
+//     )
+
