@@ -64,9 +64,22 @@ console.log('6. Showing supplyChanges...');
 // // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 // console.log('7. Showing supplyChanges with "for of" loop');
 
+
+for(let itemSupply of supplyChanges){
+    console.log('Showing supply changes with for of loop' , itemSupply);
+}
+
+
+
+
 // // 8. Write a loop to determine the total number of parts available by
 // //    adding up all the numbers in the 'supplyChanges' array.
 // console.log('8. Total supplies available is:');
+
+for(let itemSupply of supplyChanges){
+
+}
+
 
 // // 9. We have a large stash of parts in our warehouse that we 
 // //    need to box up and get ready for shipment. 
@@ -75,3 +88,4 @@ console.log('6. Showing supplyChanges...');
 // //    no more boxes can be filled.
 // //    Then log how many boxes were filled, and how many parts are left over.
 // console.log('9. Filling boxes with a "while" loop');
+
