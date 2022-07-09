@@ -16,7 +16,7 @@ console.log(supplyChanges);
 console.table(supplyChanges);
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
-console.log('3. Second supplyChange is:');
+
 console.log('second item in the supply changes is', supplyChanges[1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
@@ -30,7 +30,7 @@ console.log(supplyChanges);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
-supplyChanges.push ('25');
+supplyChanges.push (25);
 console.log(supplyChanges);
 
 
@@ -41,22 +41,37 @@ console.log(supplyChanges);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
+    for( let i = 0; i < supplyChanges.length; i++ ){
+        // console.log(' in for loop', supplyChanges[i]);
+
+        if(supplyChanges[i] > 0 ){
+            console.log('added X parts', supplyChanges[i]);
+        }
+        if(supplyChanges[i] == 0){
+            console.log('No Change', supplyChanges[i]);
+            
+        }
+        else if(supplyChanges[i] < 0){
+            console.log('revmoved x parts', supplyChanges[i]);
+        }
+        
+    }
 
 
 
-// STRETCH GOALS
-console.log('---  Stretch Goals  ---');
-// 7. Rewrite the `for` loop from #6 as a `for of` loop. 
-console.log('7. Showing supplyChanges with "for of" loop');
+// // STRETCH GOALS
+// console.log('---  Stretch Goals  ---');
+// // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
+// console.log('7. Showing supplyChanges with "for of" loop');
 
-// 8. Write a loop to determine the total number of parts available by
-//    adding up all the numbers in the 'supplyChanges' array.
-console.log('8. Total supplies available is:');
+// // 8. Write a loop to determine the total number of parts available by
+// //    adding up all the numbers in the 'supplyChanges' array.
+// console.log('8. Total supplies available is:');
 
-// 9. We have a large stash of parts in our warehouse that we 
-//    need to box up and get ready for shipment. 
-//    There are 572 parts in total, and each box holds 7 parts.
-//    Use a `while` loop to keep adding parts to boxes until
-//    no more boxes can be filled.
-//    Then log how many boxes were filled, and how many parts are left over.
-console.log('9. Filling boxes with a "while" loop');
+// // 9. We have a large stash of parts in our warehouse that we 
+// //    need to box up and get ready for shipment. 
+// //    There are 572 parts in total, and each box holds 7 parts.
+// //    Use a `while` loop to keep adding parts to boxes until
+// //    no more boxes can be filled.
+// //    Then log how many boxes were filled, and how many parts are left over.
+// console.log('9. Filling boxes with a "while" loop');
